@@ -16,9 +16,9 @@
         <input type="submit" value="확인" /> <!--폼 뒤에 버튼 "확인"으로 변경-->
     </form>
     <br/><br/>
-    {% if object_list and search_term %}
-        <h2 class="centered">({{ search_term }})에 대한 검색 결과검색 결과</h2>
-        <table id="tbl">
+    {% if object_list and search_term %}  <!--검색결과가 비어있지 않으면-->
+        <h2 class="centered">({{ search_term }})에 대한 검색 결과</h2>
+        <table id="tbl"> <!--테이블 태그를 이용해서 검색 결과 형식 지정-->
             <tr>
                 <th>번호</th>
                 <th>최종 수정일</th>
@@ -42,7 +42,7 @@
             </tr>
             {% endfor %}
         </table>
-    {% elif search_term %}
+    {% elif search_term %}  <!--검색결과가 없을 경우, 빵빵이 검색 하면 "( 빵빵이)에 대한 검색 결과가 없습니다!" 라고 표시됨-->
         <p class="centered">
             <strong><i>
                 ({{ search_term }})에 대한 검색 결과가 없습니다!
