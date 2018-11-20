@@ -123,6 +123,7 @@ class SearchFormView(FormView):
 	    # HttpResponseRedirect 객체를 반환하는데,
 	    # 여기서는 render() 함수가 HttpResponse 객체를 반환하므로
 	    # 리다이렉트 처리가 되지 않게됨.
-        return render(self.request, self.template_name, context)
+        return render(self.request, self.template_name, context)  # 함수 render을 반환, 화면을 만들기 위해 실제 일하는 함수, context에 담아서 모두 보내는 것
+
 # ch09 추가 1/1 종료
 
