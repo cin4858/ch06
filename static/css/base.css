@@ -2,7 +2,7 @@ body {
     /*font-family: "Lucida Grande", Verdana, Arial, sans-serif;*/
     font-family: 'Indie Flower', cursive;
     font-family: 'Sunflower', sans-serif;
-    font-size: 12px;
+    font-size: 16px;  /*본문 글자 크기 키워*/
 }
 
 /* PAGE STRUCTURE */
