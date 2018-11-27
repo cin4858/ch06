@@ -26,20 +26,20 @@
     <li><a href="{% url 'home' %}">홈</a></li>
     <li><a href="{% url 'bookmark:index' %}">책갈피</a></li>
     <li><a href="{% url 'blog:index' %}">게시판</a></li>
-    <li><a href="#">사진첩</a></li>
+    <li><a href="{% url 'photo:album_list' %}">사진첩</a></li>
 
     <li><a href="#">추가&bigtriangledown;</a>             <!--드롭다운 메뉴 구성-->
         <ul>
-            <li><a href="#">책갈피</a></li>
-            <li><a href="#">게시판</a></li>
-	        <li><a href="#">사진첩</a></li>
+            <li><a href="{% url 'bookmark:index' %}">책갈피</a></li>
+            <li><a href="{% url 'blog:index' %}">게시판</a></li>
+	        <li><a href="{% url 'photo:album_list' %}">사진첩</a></li>
         </ul>
     </li>
     <li><a href="#">편집&bigtriangledown;</a>             <!--드롭다운 메뉴 구성-->
         <ul>
-            <li><a href="#">책갈피</a></li>
-            <li><a href="#">게시판</a></li>
-	        <li><a href="#">사진첩</a></li>
+            <li><a href="{% url 'bookmark:index' %}">책갈피</a></li>
+            <li><a href="{% url 'blog:index' %}">게시판</a></li>
+	        <li><a href="{% url 'photo:album_list' %}">사진첩</a></li>
         </ul>
     </li>
 
